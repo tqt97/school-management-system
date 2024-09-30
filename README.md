@@ -11,12 +11,12 @@ php artisan migrate:fresh --seed
 
 > import B'class.postman_collection.json to ***postman** to test api
 
-Account login API : <admin@gmail.com>/12341234
-After login success get token and use it to authenticate
 
 ### API list
 
 - Get All score of student: <http://127.0.0.1:8000/api/v1/student/{id}/exams>
+- Update exam score: <http://127.0.0.1:8000/api/v1/exam/{id}>
+<br>
 - Get student history: <http://127.0.0.1:8000/history/{id}>
 - Get best student 1: <http://127.0.0.1:8000/getBestStudent1>
 - Get best student 2: <http://127.0.0.1:8000/getBestStudent2>

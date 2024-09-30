@@ -60,6 +60,24 @@
 			"response": []
 		},
 		{
+			"name": "Update exam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"student_id\": 1,\r\n    \"subject_id\" :1,\r\n    \"type\" : \"oral\",\r\n    \"score\": 8,\r\n    \"year\": 2023,\r\n    \"coefficient\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/v1/exam/1"
+			},
+			"response": []
+		},
+		{
 			"name": "Get History",
 			"request": {
 				"method": "GET",
