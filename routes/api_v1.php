@@ -23,3 +23,7 @@ Route::middleware('auth:sanctum')->group(function () {
         return $request->user();
     });
 });
+
+Route::get('student/{id}/exams', [App\Http\Controllers\Api\V1\StudentController::class, 'getExamOfStudent']);
+
+Route::get('exam/{id}', [App\Http\Controllers\Api\V1\ExamController::class, 'index']);
