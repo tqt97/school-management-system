@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "4c28dedb-6029-42dc-ae31-6214a37bdcaa",
+		"name": "B’CLASS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14681940"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"12341234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "1|hjLHkPHWLpuzPVCZh8AVRNS1gc4sTBlNWKH7lUOu616c7341"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/logout"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get All Score Of Student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/v1/student/1/exams"
+			},
+			"response": []
+		},
+		{
+			"name": "Get History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/history/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Best Student 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/getBestStudent1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Best Student 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/getBestStudent2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Best Student 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/getBestStudent3"
+			},
+			"response": []
+		}
+	]
+}
